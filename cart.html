@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Wonderland</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/dfba0bb4d8.js"></script>
+    <style>
+        /* Adjusting font styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333; /* Dark gray color */
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Georgia', serif;
+            color: #444; /* Slightly darker gray color */
+            margin-bottom: 15px;
+        }
+
+        p, small {
+            font-size: 14px; /* Adjust the font size as needed */
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #007bff; /* Blue color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker blue color on hover */
+        }
+
+        /* Other adjustments */
+        .logo {
+            max-width: 200px; /* Adjust the logo size if necessary */
+        }
+
+        /* Adjusting the styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd; /* Light gray border bottom */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light gray background for table header */
+        }
+
+        /* Adjusting the styles for the form */
+        form {
+            max-width: 500px; /* Adjust the maximum width of the form */
+            margin: 0 auto;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd; /* Light gray border */
+            border-radius: 5px; /* Rounded corners */
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue background color for buttons */
+            color: #fff; /* White text color */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue background color on hover */
+        }
+
+        /* Adjusting the styles for the newsletter section */
+        #newsletter {
+            background-color: #f9f9f9; /* Light gray background color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .newstext h4 {
+            margin-bottom: 15px;
+            color: #444; /* Slightly darker gray color for heading */
+        }
+
+        /* Fun and engaging styles */
+        #fun-section {
+            background-color: #ffe6e6; /* Light pink background */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #fun-section h2 {
+            color: #ff4081; /* Pink color for heading */
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        #fun-section p {
+            color: #666; /* Dark gray color for text */
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #fun-section .emoji {
+            font-size: 36px;
+        }
+
+        /* Back to top link */
+        .to-top {
+            font-size: 14px; /* Smaller font size */
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+
+      <div>
+        <ul id="navbar">
+          <a href="#" id="close"><i class="fa fa-close"></i></a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag">
+            <a class="active" href="cart.html"
+              ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"
+          ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+        ></a>
+        <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+      <h2 style="color: black;">🛒 Welcome to the Wonderland of Shopping! 🌟</h2>
+      <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i> Back to Top
+      </a>
+    </section>
+    
+
+    <!-- cart items details-->
+    <div class="small-container">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/products/f1.jpeg" alt="Tshirt" />
+              <div>
+                <p>Knitted Sweater</p>
+                <small>Price: ₹499</small>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>₹499</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/products/f3.jpg" alt="Tshirt" />
+              <div>
+                <p>Summer Dress</p>
+                <small>Price: ₹499</small>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>₹499</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/products/f5.jpg" alt="Tshirt" />
+              <div>
+                <p>Transparent Corset</p>
+                <small>Price: ₹499</small>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>₹499</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>₹1497</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>₹100</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>₹1597</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Leave a message form -->
+    <section id="form-details">
+      <form action="">
+        <span>Leave a Message</span>
+        <h2>We would love to hear from you! 💌</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Your Email" />
+        <input type="text" placeholder="Subject" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <button class="normal">Submit</button>
+      </form>
+    </section>
+
+  <!-- Newsletter section -->
+<section id="newsletter" class="section-p1 section-m1" style="background-color: #e28ae2;">
+  <div class="newstext">
+      <h4 style="color: #fff;">💌 Sign up for Our Newsletter</h4>
+      <p style="color: #fff;">Stay updated with the latest trends, exclusive offers, and more!</p>
+  </div>
+  <div class="form">
+      <input type="email" placeholder="Your Email Address" style="background-color: #fff;">
+      <button class="normal">Sign Up</button>
+  </div>
+</section>
+
+
+  <!-- Fun and engaging section -->
+  <section id="fun-section">
+    <h2>🎉 Enjoy Shopping? You're in the Right Place! 🌟</h2>
+    <p>Indulge in a delightful shopping experience like never before! From trendy fashion to stylish accessories, we've got everything you need to elevate your style game. Let's make shopping fun again! 😄</p>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address :</strong> IIITK,Kottayam,Kerala</p>
+        <p><strong>Phone :</strong> 1233456789</p>
+        
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About US</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About US</a>
+    </div>
+
+    <div class="col">
+        <h4>MY Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From app store or Google PLay Store</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
